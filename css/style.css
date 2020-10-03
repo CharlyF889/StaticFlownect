@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: 'Nunito';
+  color: white;
+}
+
+.navbar-custom {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.container2 {
+  background: radial-gradient(circle at var(--x) var(--y), #5de7ff 0%, #0092ec 100%);
+  border-radius: 15px;
+  padding: 1em 1.5em;
+}
+
+.card1 {
+  background: radial-gradient(circle at var(--x) var(--y), #5de7ff 0%, #0092ec 100%);
+  border-radius: 15px;
+  padding: 1em 1.5em;
+  width: 100%;
+}
+
+.card1 h1 {
+  font-size: 1rem;
+  pointer-events: none;
+  text-align: center;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*define CSS Variables to be modified by JavaScript*/
+:root {
+  --tx: 0;
+  --ty: 0;
+  --scale: 1;
+  --deg: 0deg;
+}
+
+.mover {
+  /* THIS is the important line */
+  -webkit-transform: translate3d(var(--tx), var(--ty), 0) scale(var(--scale)) rotate(var(--deg));
+          transform: translate3d(var(--tx), var(--ty), 0) scale(var(--scale)) rotate(var(--deg));
+  --hue: 120;
+  --duration: 2000ms;
+  -webkit-transition: -webkit-transform var(--duration) linear;
+  transition: -webkit-transform var(--duration) linear;
+  transition: transform var(--duration) linear;
+  transition: transform var(--duration) linear, -webkit-transform var(--duration) linear;
+  will-change: transform;
+  background: hsl(var(--hue), 90%, 52%);
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 10%;
+}
+
+/* Give each block a different color and transition duration */
+.mover:nth-of-type(2) {
+  --hue: 0;
+  --duration: 3000ms;
+}
+
+.mover:nth-of-type(3) {
+  --hue: 40;
+  --duration: 4000ms;
+}
+
+.mover:nth-of-type(4) {
+  --hue: 200;
+  --duration: 5000ms;
+}
+
+/*General styles for structure and controls */
+.boxy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container1 {
+  height: 40rem;
+  overflow: hidden;
+  background: #24272e;
+  margin-bottom: 10px;
+}
+
+#controls {
+  position: absolute;
+  right: 40%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (orientation: portrait) {
+  #controls {
+    right: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+input {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: .85rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

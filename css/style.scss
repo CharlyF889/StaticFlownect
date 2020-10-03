@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Nunito';
+    color: white;
+}
+.navbar-custom {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: fade-out(black, 0.3);
+  .navbar-brand {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
+.container2 {
+  background: radial-gradient(circle at var(--x) var(--y), #5de7ff 0%, #0092ec 100%);
+  border-radius: 15px;
+    padding: 1em 1.5em;
+}
+
+.card1 {
+    background: radial-gradient(circle at var(--x) var(--y), #5de7ff 0%, #0092ec 100%);
+    border-radius: 15px;
+    padding: 1em 1.5em;
+    width: 100%;
+
+    h1 {
+        font-size: 1rem;
+        pointer-events: none;
+        text-align: center;
+    }
+}
+
+.title {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*define CSS Variables to be modified by JavaScript*/
+:root {
+    --tx: 0;
+    --ty: 0;
+    --scale: 1;
+    --deg: 0deg;
+  }
+  
+  .mover {
+    /* THIS is the important line */
+    transform: 
+      translate3d(var(--tx), var(--ty), 0) 
+      scale(var(--scale)) 
+      rotate(var(--deg));
+    
+    --hue: 120;
+    --duration: 2000ms;
+    
+    transition: transform var(--duration) linear;
+    will-change: transform;
+    
+    background: hsl(var(--hue), 90%, 52%);
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 10%;
+  }
+  
+  /* Give each block a different color and transition duration */
+  .mover:nth-of-type(2) {
+    --hue: 0;
+    --duration: 3000ms;
+  }
+  .mover:nth-of-type(3) {
+    --hue: 40;
+    --duration: 4000ms;
+  }
+  .mover:nth-of-type(4) {
+    --hue: 200;
+    --duration: 5000ms;
+  }
+    
+  
+  /*General styles for structure and controls */
+  .boxy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container1 {
+    height: 40rem;
+    overflow: hidden;
+    background: hsl(220, 12%, 16%);
+    margin-bottom: 10px;
+  }
+  #controls {
+    position: absolute;
+    right: 40%; 
+    transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+    
+  }
+  @media screen and (orientation: portrait) {
+    #controls {
+      right: 50%;
+      bottom: 0;
+      transform: translateX(50%);
+    }
+  }
+  input {
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+  label {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: .85rem;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
