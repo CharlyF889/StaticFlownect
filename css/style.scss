@@ -73,8 +73,8 @@ body {
     will-change: transform;
     
     background: hsl(var(--hue), 90%, 52%);
-    width: 10vmin;
-    height: 10vmin;
+    width: 5rem;
+    height: 5rem;
     border-radius: 10%;
   }
   
@@ -94,20 +94,13 @@ body {
     
   
   /*General styles for structure and controls */
-  .boxy {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   .container1 {
     height: 560px;
     overflow: hidden;
     background: hsl(220, 12%, 16%);
     margin-bottom: 1rem;
-    display: block;
-  }
-  @media screen {
-
+    display: inline-block;
   }
   #controls {
     height:auto;
