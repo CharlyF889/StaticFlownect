@@ -73,8 +73,8 @@ body {
     will-change: transform;
     
     background: hsl(var(--hue), 90%, 52%);
-    width: 15vmin;
-    height: 15vmin;
+    width: 10vmin;
+    height: 10vmin;
     border-radius: 10%;
   }
   
@@ -100,24 +100,27 @@ body {
     margin-right: auto;
   }
   .container1 {
-    height: 40rem;
+    height: 560px;
     overflow: hidden;
     background: hsl(220, 12%, 16%);
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+  }
+  @media screen {
+
   }
   #controls {
-    position: absolute;
-    right: 40%; 
-    transform: translateY(50%);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     
   }
   @media screen and (orientation: portrait) {
     #controls {
-      right: 50%;
-      bottom: 0;
-      transform: translateX(50%);
+      height:auto;
+      position: static;
+      overflow-y: visible;
+      // transform: translateX(50%);
     }
   }
   input {

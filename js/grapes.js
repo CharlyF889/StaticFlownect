@@ -5,8 +5,8 @@ const editor = grapesjs.init({
     // As an alternative we could use: `components: '<h1>Hello World Component!</h1>'`,
     fromElement: true,
     // Size of the editor
-    height: '300px',
-    width: 'auto',
+    height: '350px',
+    width: '350px',
     // Disable the storage manager for the moment
     storageManager: false,
     // Avoid any default panel
@@ -41,3 +41,23 @@ const editor = grapesjs.init({
         ]
       },
   });
+  editor.BlockManager.add('my-block-id', {
+    label: 'Simple block',
+    content: '<div class="my-block">This is a simple block</div>',
+    content: {
+      tagName: 'div',
+      draggable: false,
+      attributes: { 'some-attribute': 'some-value' },
+      components: [
+        {
+          tagName: 'span',
+          content: '<b>Some static content</b>',
+        }, {
+          tagName: 'div',
+          // use `content` for static strings, `components` string will be parsed
+          // and transformed in Components
+          components: '<span>HTML at some point</span>',
+        }
+      ]
+    }
+  })
