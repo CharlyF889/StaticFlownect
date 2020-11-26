@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes"/>
     <meta name="author" content="Carlos Flores" />
     <meta name="keywords"
         content="data, servicios digitales, microservicio, microservice, digital services, cloud computing, database, bases de dato, datos, manejo de datos" />
@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <link rel="stylesheet" href="//unpkg.com/grapesjs/dist/css/grapes.min.css">
+    <link rel="stylesheet" href="dist/css/grapes.min.css">
+    <script src="dist/grapes.min.js"></script>
+    <script src="dist/grapesjs-touch.min.js"></script>
 
     <style>
         .pic {
@@ -25,7 +27,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container">
+        <div class="container" style="margin: 0 0.5rem;">
             <div class="title navbar-brand">
                 <div class="card1" style="--x: 0; --y:0">
                     <h1>Flownect</h1>
@@ -40,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="margin-top: 0.3rem;">Sign Up</a>
+                        <a class="nav-link" href="#">Sign Up</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Log In</a>
@@ -51,31 +53,34 @@
     </nav>
 
     <br><br><br><br><br>
-    <div id="gjs">
-        <h1>Grape js!</h1>
-        <h3>Editame</h3>
-        <h5><b>Cambiame de lugar</b></h5>
-    </div>
-    <div id="blocks"></div>
-    <br><br>
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold">Cloud Computing, Data Management, Web
+                    <h3 class="text-uppercase text-white font-weight-bold">Cloud Computing, Data Management, Web
                         Developmenet.
-                    </h1>
+                    </h3>
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline container2" style="--x: 0; --y:0">
-                    <p class="text-white-75 font-weight-light mb-5">Flownect will manage your
+                    <p class="text-white-75 font-weight-light mb-5 " >Flownect brings at your disposal the power of existing open-source techs for you to  manage your
                         digital and cloud services, easy and accessible.
                     </p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="./html/_index.html">Edit your new Web Page</a>
                 </div>
             </div>
         </div>
     </header>
+    <br>
+    <section>
+        <div id="gjs">
+            <h1>Grape js!</h1>
+            <h3 style="color:blue">Editame</h3>
+            <h5><b>Cambiame de lugar</b></h5>
+            <h2 style="font-size: xx-large; color:blueviolet">Copiame</h2>
+        </div>
+        <div id="blocks"></div>   
+    </section>
     <div class="container">
         <div class="container2">
             <div class="welcome-back"></div>

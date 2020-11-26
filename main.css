@@ -83,3 +83,9 @@ body {
   touch-action: none;
 
 }
+.container2{
+  margin: 0.5rem;
+}
+.navbar-nav > .nav-link { 
+  margin-top: 0.8rem;
+}

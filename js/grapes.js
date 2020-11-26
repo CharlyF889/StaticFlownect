@@ -40,6 +40,8 @@ const editor = grapesjs.init({
           }
         ]
       },
+      // plugins: [ grapesjsTouch ]
+      plugins: ['grapesjs-touch']
   });
   editor.BlockManager.add('my-block-id', {
     label: 'Simple block',
