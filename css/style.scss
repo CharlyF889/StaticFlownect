@@ -104,11 +104,13 @@ body {
     overflow: hidden;
     background: hsl(220, 12%, 16%);
     margin-bottom: 1rem;
+    display: block;
   }
   @media screen {
 
   }
   #controls {
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;

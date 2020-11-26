@@ -111,9 +111,11 @@ body {
   overflow: hidden;
   background: #24272e;
   margin-bottom: 1rem;
+  display: block;
 }
 
 #controls {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

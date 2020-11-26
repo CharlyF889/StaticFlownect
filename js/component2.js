@@ -10,7 +10,7 @@ class CoolButton extends React.Component {
 
         if (this.state.downloading) {
             return (
-                <p className="downloading">Wait...</p>
+                <p className="downloading">You won't regret it ;)</p>
             )
         }
 
